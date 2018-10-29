@@ -13,7 +13,8 @@ html_cos = requests.get(url_cos).text
 soup_cos = BeautifulSoup(html_cos, 'html.parser')
 select = soup_cos.select_one('#KOSPI_now')
 
-msg = select.text
+# msg = select.text
+msg = "안녕하세요"
 msg_url = 'https://api.telegram.org/bot{0}/{1}?chat_id={2}&text={3}'.format(token,method_name,user_id,msg)
 # print(msg_url)
 print(requests.get(msg_url))
