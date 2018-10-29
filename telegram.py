@@ -17,3 +17,7 @@ msg = select.text
 msg_url = 'https://api.telegram.org/bot{0}/{1}?chat_id={2}&text={3}'.format(token,method_name,user_id,msg)
 # print(msg_url)
 print(requests.get(msg_url))
+
+
+
+
